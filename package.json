@@ -11,6 +11,10 @@
   "scripts": {
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n-alonso/backend_business-api.git"
+  },
   "name": "business_api",
   "version": "1.0.0",
   "description": "small project to practice express and apis",
