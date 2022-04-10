@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const errorhandler = require('errorhandler')
 // Endpoint Routers
-const minionsRouter = require('./server/minions')
+const workersRouter = require('./server/workers')
 const ideasRouter = require('./server/ideas')
 const meetingsRouter = require('./server/meetings')
 
@@ -17,7 +17,7 @@ app.use(morgan('dev'))
 app.use(bodyParser.json())
 
 // Mount Routers
-app.use('/minions', minionsRouter)
+app.use('/workers', workersRouter)
 app.use('/ideas', ideasRouter)
 app.use('/meetings', meetingsRouter)
 

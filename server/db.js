@@ -1,19 +1,19 @@
-const minions = [
+let workers = [
     {
         name: 'Marak',
         title: 'Faker.js Manager',
-        salary: '0',
+        salary: 0,
         function: 'Not powering this project'
     },
     {
         name: 'Blacky',
         title: 'My Dog',
-        salary: '9000',
+        salary: 9000,
         function: 'Being adorable'
     }
 ]
 
-const ideas = [
+let ideas = [
     {
         id: '1',
         name: 'Rebuild Faker.js',
@@ -28,7 +28,7 @@ const ideas = [
     }
 ]
 
-const meetings = [
+let meetings = [
     {
         time: '12:00pm',
         day: 13,
@@ -43,6 +43,6 @@ const meetings = [
     }
 ]
 
-module.exports.minions = minions
+module.exports.workers = workers
 module.exports.ideas = ideas
 module.exports.meetings = meetings
