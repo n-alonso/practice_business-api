@@ -50,7 +50,7 @@ Troubleshooting:
   * description: string
   * revenue: number
 * Meeting
-  * time: string (XX:XX[am/pm])
-  * day: number (1-7)
-  * month: number (1-12)
+  * time: string
+  * day: number
+  * month: number
   * note: string
