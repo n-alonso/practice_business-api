@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Practice backend project with the theme of maintaining a business.
+Practice backend project with the theme of maintaining a business.  
 Simple API built with Node.js and Express.js, and dedicated endpoints to manage your workers, business ideas, and meetings.
 
 ## Installation
