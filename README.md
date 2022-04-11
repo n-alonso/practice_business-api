@@ -16,6 +16,7 @@ To install it, follow these steps:
 
 Troubleshooting:
  * If you get `nodemon is not a valid command` or similar, run `npm i nodemon`. If the issue persists, run `sudo npm i nodemon`
+ * If the issue persists or you get similar issues with other packages, you might want to check that they are installed with `<package_name> -v` and force install with `sudo npm i <package_name>`
 
 ## Description
 
