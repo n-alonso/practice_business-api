@@ -2,6 +2,9 @@
 
 ## Introduction
 
+Practice backend project with the theme of maintaining a business.
+Simple API built with Node.js and Express.js, and dedicated endpoints to manage your workers, business ideas, and meetings.
+
 ## Installation
 
 This project assumes that you have Node.js properly installed in your computer.
@@ -25,14 +28,14 @@ Troubleshooting:
   * PUT /workers/:name to update a single worker by name
   * DELETE /workers/:name to delete a single worker by name
 
-* /ideas __(Not Implemented)__
+* /ideas 
   * GET /ideas to get an array of all ideas
   * POST /ideas to create a new idea and save it to the database
   * GET /ideas/:id to get a single idea by id
   * PUT /ideas/:id to update a single idea by id
   * DELETE /ideas/:id to delete a single idea by id
 
-* /meetings __(Not Implemented)__
+* /meetings 
   * GET /meetings to get an array of all meetings
   * POST /meetings to create a new meeting and save it to the database
   * DELETE /meetings to delete all meetings from the database
