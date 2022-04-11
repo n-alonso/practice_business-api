@@ -1,6 +1,6 @@
 const express = require('express')
 const workersRouter = express.Router()
-let workers = require('./db.js').workers
+const workers = require('./db.js').workers
 
 const validateWorker = (req, res, next) => {
     if ((!Object.keys(req.body).includes('name')) || 
@@ -27,11 +27,8 @@ workersRouter.param('name', (req, res, next) => {
     const worker = workers.find(worker => worker.name.toLowerCase() === name)
     const workerIndex = workers.findIndex(worker => worker.name.toLowerCase() === name)
     if (worker) {
-        console.log(workers)
         req.worker = worker
-        console.log(workers)
         req.index = workerIndex
-        console.log(workers)
         next()
     } else {
         res.status(404).send('Worker not found!')
@@ -57,10 +54,6 @@ workersRouter.put('/:name', validateWorker, (req, res, next) => {
     res.send(updatedWorker)
 })
 
-workersRouter.delete('/', (req, res, next) => {
-    workers = []
-    res.status(204).send()
-})
 workersRouter.delete('/:name', (req, res, next) => {
     workers.splice(req.index, 1)
     res.status(204).send()

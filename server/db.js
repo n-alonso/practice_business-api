@@ -1,4 +1,4 @@
-let workers = [
+const workers = [
     {
         name: 'Marak',
         title: 'Faker.js Manager',
@@ -13,7 +13,7 @@ let workers = [
     }
 ]
 
-let ideas = [
+const ideas = [
     {
         id: '1',
         name: 'Rebuild Faker.js',
@@ -28,7 +28,7 @@ let ideas = [
     }
 ]
 
-let meetings = [
+const meetings = [
     {
         time: '12:00pm',
         day: 13,
